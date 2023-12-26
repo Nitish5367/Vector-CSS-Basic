@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <style>
+    *{
+        margin:0px;
+        outline:0px;
+        border:0px;
+        padding:0px;
+    }
+    nav{
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        width:100%;
+        height:15vh;
+        background-color: burlywood;
+    }
+    .logo{
+        width:60px;
+        height:60px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+    .logo img{
+        width:100%;
+        height:100%;
+        border-radius: 50%;
+    }
+    .menu{
+        display:flex;
+        gap:15px;
+        margin-left: 20px;
+    }
+    .menu div{
+        font-size: 20px;
+        color:blue;
+    }
+    #user{
+        font-size:25px;
+        color:rgb(223,121,5);
+    }
+    .bnr{
+        width:100%;
+        height:85vh;
+        position: relative;
+        display:flex;
+        align-items:flex-end;
+        justify-content: center;
+
+
+    }
+    .bnr img{
+        width:100%;
+        height:100%;
+    }
+    .layer{
+        position: absolute;
+        top:0px;
+        width:100%;
+        height:100%;
+        background:linear-gradient(rgba(226,71,9,0.6),rgba(18,223,7,0.6));
+
+    }
+    .btext{
+        position: absolute;
+        width:100%;
+        margin-bottom: 50px;
+        margin-left: 50%;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+    .btext h1{
+        color:blue;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+    .btext button{
+        width:30%;
+        height:30px;
+        font-size: 10px;
+        color:beige;
+        border: 2px solid gray;
+        border-radius: 10px;
+    }
+    .main{
+        width:80%;
+        margin:20px auto;
+        display: flex;
+        justify-content: space-evenly;
+        background-color:aquamarine;
+        flex-wrap: wrap;
+        gap:20px;
+        padding: 20px 0px;
+
+
+        
+    }
+    .card{
+        width:40%;
+        
+        background-color: darkgrey;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+        
+    }
+    .main h1{
+        width:65%;
+        text-align: center;
+        color: blue;
+
+    }
+    .img{
+        width:130px;
+        height:100px;
+    }
+    .img img{
+        width:100%;
+        height:100%;
+    }
+    .card h2{
+        color:chocolate;
+
+    }
+    .card p b{
+        color:rebeccapurple;
+
+    }
+    .card p{
+        text-align: center;
+        color:rgb(165, 42, 42)
+    }
+    .price{
+        color:red
+    }
+    .price span{
+        color: blue;
+    }
+    .rt{
+      color:yellow;
+    }
+    .rt span{
+        color:fuchsia;
+    }
+    .card button{
+        padding:5px 20px;
+        background-color: gray;
+        color:aliceblue;
+        font-size: 17px;
+        border:2px solid purple;
+    }
+    .tes{
+        width:50%;
+        border:2px solid gray;
+        border-radius: 10px;
+        margin:auto;
+        padding:20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        border: darkmagenta;
+    }
+   .prof{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+   }
+   .prof img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+   }
+   .test p{
+    text-align: justify;
+    text-indent: 20px;
+    color:blueviolet
+   }
+   footer{
+    width:100%;
+    background-color: black;
+    color:white;
+    font-style: italic;
+    text-align: center;
+    font-size: 18px;
+    padding:10px 0px;
+    margin-top: 10px;
+   }
+   .icons{
+    width:30px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    right: 20px;
+    top:30vh;
+   }
+ </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="images1.jpg"/></div>
+        <div class="menu">
+            <div >Contactus</div>
+            <div >Services</div>
+            <div >Models</div>
+            <div >Book</div>
+            <div id="user"><i class="fa-regular fa-address-book"></i></div>
+
+        </div>
+    </nav>
+    <div class="bnr">
+        <img src="1.jpg"/>
+        <div class="layer"></div>
+        <div class="btext">
+            <h1>Welcome to BMW World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error provident atque rem fuga dolores nulla impedit tempora magnam ab iusto, iure et ratione optio fugit corporis asperiores deleniti. Rerum, a!</p>
+            <button>Know more...</button>
+        </div>
+        
+    </div>
+    <div class="main">
+       <h1>Cars Models</h1>
+        <div class="card">
+           <div class="img"><img src="2.jpg"/></div>
+           <h2>BMW-1</h2>
+           <p><b>Desc:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque, quibusdam, non modi deserunt consequuntur aspernatur quis laboriosam facere consectetur eum molestiae inventore at optio corporis. Reiciendis libero sit animi!</p>
+            <div class="price"><b>Cost:</b><del>Rs900000</del><span> 899999</span></div>  
+            <div class="rt"><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <span>4000+</span>
+            </div>
+            <button>Know More...</button>
+
+        </div>
+        <div class="card">
+            <div class="img"><img src="3.jpg"/></div>
+            <h2>BMW-2</h2>
+            <p><b>Desc:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque, quibusdam, non modi deserunt consequuntur aspernatur quis laboriosam facere consectetur eum molestiae inventore at optio corporis. Reiciendis libero sit animi!</p>
+             <div class="price"><b>Cost:</b><del>Rs100000</del><span> 999999</span></div>  
+             <div class="rt"><i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-regular fa-star-half-stroke"></i>
+                 <span>4000+</span>
+             </div>
+             <button>Know More...</button>
+ 
+         </div>
+         <div class="card">
+            <div class="img"><img src="4.jpg"/></div>
+            <h2>BMW-3</h2>
+            <p><b>Desc:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque, quibusdam, non modi deserunt consequuntur aspernatur quis laboriosam facere consectetur eum molestiae inventore at optio corporis. Reiciendis libero sit animi!</p>
+             <div class="price"><b>Cost:</b><del>Rs200000</del><span> 199999</span></div>  
+             <div class="rt"><i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-regular fa-star-half-stroke"></i>
+                 <span>4000+</span>
+             </div>
+             <button>Know More...</button>
+ 
+         </div>
+         <div class="card">
+            <div class="img"><img src="5.jpg"/></div>
+            <h2>BMW-4</h2>
+            <p><b>Desc:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque, quibusdam, non modi deserunt consequuntur aspernatur quis laboriosam facere consectetur eum molestiae inventore at optio corporis. Reiciendis libero sit animi!</p>
+             <div class="price"><b>Cost:</b><del>Rs9100000</del><span> 8999999</span></div>  
+             <div class="rt"><i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-regular fa-star-half-stroke"></i>
+                 <span>4000+</span>
+             </div>
+             <button>Know More...</button>
+ 
+         </div>
+         <div class="card">
+            <div class="img"><img src="6.jpg"/></div>
+            <h2>BMW-5</h2>
+            <p><b>Desc:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque, quibusdam, non modi deserunt consequuntur aspernatur quis laboriosam facere consectetur eum molestiae inventore at optio corporis. Reiciendis libero sit animi!</p>
+             <div class="price"><b>Cost:</b><del>Rs900000</del><span> 899999</span></div>  
+             <div class="rt"><i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-regular fa-star-half-stroke"></i>
+                 <span>4000+</span>
+             </div>
+             <button>Know More...</button>
+ 
+         </div>
+    </div>
+    <div class="tes">
+        <div class="prof"><img src="./images1.jpg" alt="" srcset=""></div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti corporis dolores praesentium eaque maxime ex, maiores perferendis suscipit id et, iusto ipsam consectetur ducimus! Error sequi, dolorem ut nemo corporis tempore rem illum placeat. Recusandae inventore repudiandae cum voluptas nulla dicta, natus cumque amet hic consequuntur soluta omnis. Consequuntur obcaecati aspernatur optio aliquid placeat ipsam excepturi cum, provident architecto velit nobis harum impedit ad doloremque molestiae accusantium nulla voluptates dolorum. Quasi eius, fugiat ipsa ex molestias dolorem praesentium exercitationem omnis quibusdam eveniet assumenda debitis nobis iste harum ut nesciunt consectetur officia error voluptatem accusamus, laudantium eaque? Minima, repudiandae sed nisi, voluptatibus blanditiis molestias quisquam eaque neque qui suscipit accusantium nostrum consequatur. Atque ullam beatae, officia incidunt quaerat quam cum voluptatum recusandae autem vel. Perspiciatis laborum amet qui voluptates quam debitis corporis non quos modi sint cumque quasi, explicabo a ex, praesentium ipsa incidunt velit? Voluptates assumenda, eveniet harum reprehenderit et dignissimos, accusamus animi veniam vitae maiores quia facere, nihil culpa quod perspiciatis consequatur ea tempore iure sunt iste odit praesentium esse odio voluptas. Accusamus soluta vel consequuntur alias praesentium, aperiam dolor sequi iste ipsa sint obcaecati quam reiciendis, blanditiis dolorem at rem officia! Numquam eius, facilis tempora amet itaque libero eligendi accusantium alias praesentium laborum repellendus. Voluptatem, quos magnam perspiciatis harum similique odio natus dolorem ex quasi expedita iusto placeat nobis recusandae aliquid quidem quas consequuntur obcaecati fugit asperiores! Veniam, quis. Eaque reiciendis, accusamus maxime iste odit debitis dolorem officiis commodi similique, non maiores eos totam, iusto dolores. Ut ratione, dolor alias voluptas nobis, iure fugit fugiat aperiam impedit cumque quis debitis quam, blanditiis reiciendis. Error sit inventore repellat sunt ipsa nostrum eveniet aliquam odio illo labore maiores culpa odit est impedit fugiat, perferendis, tempora fugit consequatur molestias! Fuga animi et corporis itaque consequuntur? Aspernatur quos doloribus quam eaque officiis!</p>
+        <div class="rt"><i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star-half-stroke"></i>
+        </div>
+    </div>
+    <footer>@copyright to xyz.com</footer>
+    <div class="icons">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star-half-stroke"></i>
+    </div>
+</body>
+</html>

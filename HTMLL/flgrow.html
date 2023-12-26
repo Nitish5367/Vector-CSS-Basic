@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            width:100%;
+            height:40vh;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .con div{
+            flex-basis: 200px;
+            height: 10vh;
+        }
+        .con div:nth-child(even){
+            background-color: blueviolet;
+        }
+        .con div:nth-child(odd){
+            background-color: burlywood;
+        }
+        .i3{
+            align-self: center;
+        }
+        .i2{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="i1">1</div>
+        <div class="i2">2</div>
+        <div class="i3">3</div>
+        <div class="i4">4</div>
+    </div>
+</body>
+</html>
